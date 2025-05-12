@@ -21,13 +21,13 @@ require("formatter").setup({
 				return {
 					exe = "astyle",
 					args = {
-                        "--style=allman",
-                        "--indent=spaces=4",
-                        "--indent-namespaces",
-                        "--pad-header",
-                        "--unpad-paren",
-                        "--add-braces",
-                        "--suffix=none",
+						"--style=allman",
+						"--indent=spaces=4",
+						"--indent-namespaces",
+						"--pad-header",
+						"--unpad-paren",
+						"--add-braces",
+						"--suffix=none",
 					},
 					stdin = true,
 				}
@@ -40,13 +40,13 @@ require("formatter").setup({
 				return {
 					exe = "astyle",
 					args = {
-                        "--style=allman",
-                        "--indent=spaces=4",
-                        "--indent-namespaces",
-                        "--pad-header",
-                        "--unpad-paren",
-                        "--add-braces",
-                        "--suffix=none",
+						"--style=allman",
+						"--indent=spaces=4",
+						"--indent-namespaces",
+						"--pad-header",
+						"--unpad-paren",
+						"--add-braces",
+						"--suffix=none",
 					},
 					stdin = true,
 				}
@@ -106,4 +106,10 @@ require("formatter").setup({
 			require("formatter.filetypes.any").remove_trailing_whitespace,
 		},
 	},
+})
+
+-- Auto format on save
+vim.api.nvim_create_autocmd("BufWritePost", {
+	pattern = "*",
+	command = "FormatWrite",
 })
