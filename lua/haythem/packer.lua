@@ -44,6 +44,9 @@ return require("packer").startup(function(use)
 		},
 	})
 
+	use("mason-org/mason.nvim")
+	use("mason-org/mason-lspconfig.nvim")
+
 	use({
 		"numToStr/Comment.nvim",
 		config = function()
@@ -140,4 +143,11 @@ return require("packer").startup(function(use)
 		"nvim-tree/nvim-tree.lua",
 		requires = { "nvim-tree/nvim-web-devicons" },
 	})
+
+	use("Vimjas/vim-python-pep8-indent")
+	use("vim-scripts/django.vim")
+	use("yuezk/vim-js")
+	use("maxmellon/vim-jsx-pretty")
+	use("HerringtonDarkholme/yats.vim")
+	use("shaunsingh/moonlight.nvim")
 end)

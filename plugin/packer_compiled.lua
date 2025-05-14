@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/haythem/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["django.vim"] = {
+    loaded = true,
+    path = "/home/haythem/.local/share/nvim/site/pack/packer/start/django.vim",
+    url = "https://github.com/vim-scripts/django.vim"
+  },
   ["formatter.nvim"] = {
     loaded = true,
     path = "/home/haythem/.local/share/nvim/site/pack/packer/start/formatter.nvim",
@@ -122,6 +127,16 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/home/haythem/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/haythem/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/mason-org/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/haythem/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/mason-org/mason.nvim"
   },
   ["nvim-autopairs"] = {
     config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
@@ -176,7 +191,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\nn\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\17open_mapping\n<C-t>\tsize\3\15\14direction\15horizontal\nsetup\15toggleterm\frequire\0" },
+    config = { "\27LJ\2\nn\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\tsize\3\15\17open_mapping\n<C-t>\14direction\15horizontal\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/home/haythem/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -185,6 +200,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/haythem/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-js"] = {
+    loaded = true,
+    path = "/home/haythem/.local/share/nvim/site/pack/packer/start/vim-js",
+    url = "https://github.com/yuezk/vim-js"
+  },
+  ["vim-jsx-pretty"] = {
+    loaded = true,
+    path = "/home/haythem/.local/share/nvim/site/pack/packer/start/vim-jsx-pretty",
+    url = "https://github.com/maxmellon/vim-jsx-pretty"
   },
   ["vim-markdown"] = {
     config = { '\27LJ\2\nÁ\1\0\0\2\0\a\0\0216\0\0\0009\0\1\0)\1\1\0=\1\2\0006\0\0\0009\0\1\0)\1\0\0=\1\3\0006\0\0\0009\0\1\0)\1\0\0=\1\4\0006\0\0\0009\0\1\0)\1\1\0=\1\5\0006\0\0\0009\0\1\0)\1\1\0=\1\6\0K\0\1\0\27vim_markdown_autowrite\31vim_markdown_strikethrough%vim_markdown_conceal_code_blocks\25vim_markdown_conceal"vim_markdown_folding_disabled\6g\bvim\0' },
@@ -204,6 +229,11 @@ _G.packer_plugins = {
     path = "/home/haythem/.local/share/nvim/site/pack/packer/start/vim-nightfly-colors",
     url = "https://github.com/bluz71/vim-nightfly-colors"
   },
+  ["vim-python-pep8-indent"] = {
+    loaded = true,
+    path = "/home/haythem/.local/share/nvim/site/pack/packer/start/vim-python-pep8-indent",
+    url = "https://github.com/Vimjas/vim-python-pep8-indent"
+  },
   ["vim-table-mode"] = {
     config = { "\27LJ\2\n5\0\0\2\0\4\0\0056\0\0\0009\0\1\0'\1\3\0=\1\2\0K\0\1\0\6|\22table_mode_corner\6g\bvim\0" },
     loaded = false,
@@ -213,20 +243,25 @@ _G.packer_plugins = {
     url = "https://github.com/dhruvasagar/vim-table-mode"
   },
   vimtex = {
-    config = { "\27LJ\2\n›\2\0\0\2\0\v\0\0216\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0'\1\5\0=\1\4\0006\0\0\0009\0\1\0'\1\a\0=\1\6\0006\0\0\0009\0\1\0)\1\0\0=\1\b\0006\0\0\0009\0\1\0005\1\n\0=\1\t\0K\0\1\0\1\0\v\19math_super_sub\3\1\17math_symbols\3\1\vstyles\3\1\rsections\3\0\15math_fracs\3\1\20math_delimiters\3\1\16math_bounds\3\1\ngreek\3\1\nfancy\3\1\ncites\3\1\faccents\3\1\26vimtex_syntax_conceal\25vimtex_quickfix_mode\nlatex\15tex_flavor\flatexmk\27vimtex_compiler_method\fzathura\23vimtex_view_method\6g\bvim\0" },
+    config = { "\27LJ\2\n›\2\0\0\2\0\v\0\0216\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0'\1\5\0=\1\4\0006\0\0\0009\0\1\0'\1\a\0=\1\6\0006\0\0\0009\0\1\0)\1\0\0=\1\b\0006\0\0\0009\0\1\0005\1\n\0=\1\t\0K\0\1\0\1\0\v\rsections\3\0\17math_symbols\3\1\19math_super_sub\3\1\15math_fracs\3\1\20math_delimiters\3\1\16math_bounds\3\1\ngreek\3\1\nfancy\3\1\ncites\3\1\faccents\3\1\vstyles\3\1\26vimtex_syntax_conceal\25vimtex_quickfix_mode\nlatex\15tex_flavor\flatexmk\27vimtex_compiler_method\fzathura\23vimtex_view_method\6g\bvim\0" },
     loaded = false,
     needs_bufread = true,
     only_cond = false,
     path = "/home/haythem/.local/share/nvim/site/pack/packer/opt/vimtex",
     url = "https://github.com/lervag/vimtex"
+  },
+  ["yats.vim"] = {
+    loaded = true,
+    path = "/home/haythem/.local/share/nvim/site/pack/packer/start/yats.vim",
+    url = "https://github.com/HerringtonDarkholme/yats.vim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\nn\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\17open_mapping\n<C-t>\tsize\3\15\14direction\15horizontal\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
@@ -235,10 +270,10 @@ time([[Config for Comment.nvim]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\nn\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\tsize\3\15\17open_mapping\n<C-t>\14direction\15horizontal\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
