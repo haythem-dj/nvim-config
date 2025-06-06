@@ -25,3 +25,4 @@ vim.o.whichwrap = 'b,s,<,>,[,],h,l'
 vim.o.clipboard = "unnamedplus"
 
 vim.g.mapleader = " "
+
