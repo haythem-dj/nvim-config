@@ -23,3 +23,6 @@ vim.keymap.set("n", "<leader>d", "Yp")
 vim.keymap.set("n", "<leader>D", "Ykp")
 
 vim.keymap.set("n", "<leader>a", "ggVG")
+
+vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>n", ":NvimTreeFocus<CR>")
