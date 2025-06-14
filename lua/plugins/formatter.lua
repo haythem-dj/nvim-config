@@ -6,8 +6,28 @@ return {
 			filetype = {
 				lua = { require("formatter.filetypes.lua").stylua },
 				python = { require("formatter.filetypes.python").black },
-				cpp = { require("formatter.filetypes.cpp").clangformat },
-				c = { require("formatter.filetypes.c").clangformat },
+				cpp = {
+					function()
+						return {
+							exe = "clang-format",
+							args = {
+								'"--style={BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never, BreakBeforeBraces: Allman}"',
+							},
+							stdin = true,
+						}
+					end,
+				},
+				c = {
+					function()
+						return {
+							exe = "clang-format",
+							args = {
+								'"--style={BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never, BreakBeforeBraces: Allman}"',
+							},
+							stdin = true,
+						}
+					end,
+				},
 				javascript = { require("formatter.filetypes.javascript").prettier },
 				typescript = { require("formatter.filetypes.typescript").prettier },
 				typescriptreact = { require("formatter.filetypes.typescript").prettier },
