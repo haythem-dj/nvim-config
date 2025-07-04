@@ -1,4 +1,4 @@
-local servers = { "lua_ls", "pyright", "clangd", "vimls", "ts_ls", "html", "cssls", "marksman" }
+local servers = { "lua_ls", "pyright", "clangd", "vimls", "ts_ls", "html", "cssls", "marksman", "cmake" }
 
 return {
     "neovim/nvim-lspconfig",

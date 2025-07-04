@@ -18,6 +18,8 @@ return {
 				"markdown_inline",
 				"html",
 				"css",
+                "cmake",
+                "make",
 			},
 			highlight = { enable = true },
 			autotag = { enable = true },
