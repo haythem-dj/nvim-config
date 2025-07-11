@@ -10,9 +10,6 @@ return {
 					function()
 						return {
 							exe = "clang-format",
-							args = {
-								'"--style={BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never, BreakBeforeBraces: Allman}"',
-							},
 							stdin = true,
 						}
 					end,
@@ -21,9 +18,6 @@ return {
 					function()
 						return {
 							exe = "clang-format",
-							args = {
-								'"--style={BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never, BreakBeforeBraces: Allman}"',
-							},
 							stdin = true,
 						}
 					end,
