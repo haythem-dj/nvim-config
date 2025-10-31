@@ -18,7 +18,6 @@ return {
         },
     },
     config = function()
-        local lspconfig = require("lspconfig")
         local capabilities = vim.lsp.protocol.make_client_capabilities()
         local opts = { noremap = true, silent = true, buffer = bufnr }
 
@@ -35,8 +34,9 @@ return {
             vim.keymap.set("n", "<F4>", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
         end
 
+        -- lsp = require("lspconfig")
         for _, server in ipairs(servers) do
-            lspconfig[server].setup {
+            vim.lsp.config[server] = {
                 on_attach = on_attach,
                 capabilities = capabilities,
             }
