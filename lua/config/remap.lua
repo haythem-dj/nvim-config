@@ -29,13 +29,3 @@ vim.keymap.set("n", "<leader>n", ":NvimTreeFocus<CR>")
 
 -- this only works on linux
 vim.keymap.set("n", "<leader>cg", ":e ~/.config/nvim/init.lua<CR>")
-
-vim.keymap.set("n", "<Tab>", ":bn<CR>")
-vim.keymap.set("n", "<S-Tab>", ":bp<CR>")
-vim.keymap.set("n", "<leader>bd", ":bd<CR>:bp<CR>")
-
-for i = 1, 9 do
-	vim.keymap.set("n", "<A-" .. i .. ">", function()
-		require("bufferline").go_to(i, true)
-	end)
-end
