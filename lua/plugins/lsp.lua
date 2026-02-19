@@ -1,4 +1,14 @@
-local servers = { "lua_ls", "pyright", "clangd", "vimls", "ts_ls", "html", "cssls", "marksman", "cmake" }
+local servers = {
+	"lua_ls",
+	"pyright",
+	"clangd",
+	"vimls",
+	"ts_ls",
+	"html",
+	"cssls",
+	"marksman",
+	"cmake",
+}
 
 return {
 	"neovim/nvim-lspconfig",
@@ -34,7 +44,6 @@ return {
 			vim.keymap.set("n", "<F4>", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
 		end
 
-		-- lsp = require("lspconfig")
 		for _, server in ipairs(servers) do
 			vim.lsp.config[server] = {
 				on_attach = on_attach,

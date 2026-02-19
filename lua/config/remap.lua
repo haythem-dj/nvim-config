@@ -27,5 +27,7 @@ vim.keymap.set("n", "<leader>a", "ggVG")
 vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>")
 vim.keymap.set("n", "<leader>n", ":NvimTreeFocus<CR>")
 
+vim.keymap.set("n", "<leader>z", ":Lazy<CR>")
+
 -- this only works on linux
 vim.keymap.set("n", "<leader>cg", ":e ~/.config/nvim/init.lua<CR>")

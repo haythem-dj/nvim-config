@@ -20,7 +20,6 @@ return {
 				"css",
 				"cmake",
 				"make",
-				"latex",
 			},
 			highlight = { enable = true },
 			autotag = { enable = true },

@@ -31,22 +31,3 @@ vim.opt.updatetime = 50
 vim.o.whichwrap = "b,s,<,>,[,],h,l"
 vim.o.clipboard = "unnamedplus"
 vim.opt.guicursor = "n-v-c-i:block"
-
--- VimTeX settings
-vim.cmd([[
-  " Enable filetype plugins and indentation
-  filetype plugin indent on
-
-  " Enable syntax highlighting
-  syntax enable
-
-  " Viewer options
-  let g:vimtex_view_method = 'zathura'
-
-  " Alternative generic viewer (optional)
-  let g:vimtex_view_general_viewer = 'okular'
-  let g:vimtex_view_general_options = '--unique file:@pdf#src:@line@tex'
-
-  " Compiler method
-  let g:vimtex_compiler_method = 'latexmk'
-]])

@@ -28,15 +28,6 @@ return {
 				html = { require("formatter.filetypes.html").prettier },
 				css = { require("formatter.filetypes.css").prettier },
 				markdown = { require("formatter.filetypes.markdown").prettier },
-				latex = {
-					function()
-						return {
-							exe = "latexindent",
-							args = { "-w", vim.api.nvim_buf_get_name(0) }, -- overwrite current file
-							stdin = false,
-						}
-					end,
-				},
 			},
 		})
 		vim.api.nvim_create_autocmd("BufWritePost", {
