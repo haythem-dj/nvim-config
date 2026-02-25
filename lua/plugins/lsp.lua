@@ -45,10 +45,21 @@ return {
 		end
 
 		for _, server in ipairs(servers) do
-			vim.lsp.config[server] = {
-				on_attach = on_attach,
-				capabilities = capabilities,
-			}
+			if server == "clangd" then
+				vim.lsp.config.clangd = {
+					cmd = { "clangd", "--clang-tidy" },
+					do_attach = on_attach,
+					capabilities = capabilities,
+					init_options = {
+						fallbackFlags = { "-std=c++23" },
+					},
+				}
+			else
+				vim.lsp.config[server] = {
+					on_attach = on_attach,
+					capabilities = capabilities,
+				}
+			end
 		end
 	end,
 }
