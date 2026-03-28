@@ -30,4 +30,4 @@ vim.opt.updatetime = 50
 -- Other options
 vim.o.whichwrap = "b,s,<,>,[,],h,l"
 vim.o.clipboard = "unnamedplus"
-vim.opt.guicursor = "n-v-c-i:block"
+-- vim.opt.guicursor = "n-v-c-i:block"
